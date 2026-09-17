@@ -1,49 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perfil</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reparación de Teléfonos - PhoneFix</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fuente desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-  <main class="contenedor">
-    <section class="tarjeta-perfil">
-      <div class="encabezado-perfil">
-        <img id="fotoPerfil" src="uploads/ana_torres.jpg" alt="Foto de perfil" class="foto-perfil">
-        <div class="datos-personales">
-          <h2 id="nombrePerfil">Ana Torres</h2>
-          <span class="cargo">Desarrolladora Web</span>
+    <!-- Encabezado y Navegación -->
+    <header>
+        <div class="logo">
+            <h1>Phone<span>Fix</span></h1>
         </div>
-      </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-      <p class="descripcion">
-        Desarrolladora web apasionada por crear experiencias digitales modernas, accesibles y fáciles de utilizar.
-      </p>
-
-      <div class="estadisticas">
-        <div class="stat-item">
-          <span class="numero">24</span>
-          <span class="etiqueta">Proyectos</span>
+    <!-- Sección Principal / Banner -->
+    <section id="inicio" class="hero">
+        <div class="hero-text">
+            <h2>¿Pantalla rota o batería agotada?</h2>
+            <p>Reparamos tu teléfono móvil en tiempo récord con garantía asegurada.</p>
+            <a href="#contacto" class="btn">Solicitar Presupuesto</a>
         </div>
-        <div class="stat-item">
-          <span class="numero">1.8K</span>
-          <span class="etiqueta">Seguidores</span>
-        </div>
-        <div class="stat-item">
-          <span class="numero">5</span>
-          <span class="etiqueta">Años</span>
-        </div>
-      </div>
-
-      <a href="index1.html" class="btn-contactar">Contactar</a>
     </section>
-  </main>
 
-  <script src="perfil.js"></script>
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-container">
+            <div class="card">
+                <div class="icon">📱</div>
+                <h3>Cambio de Pantalla</h3>
+                <p>Sustituimos pantallas rotas o con fallos táctiles por repuestos de alta calidad.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🔋</div>
+                <h3>Cambio de Batería</h3>
+                <p>Devuélvele la vida útil a tu teléfono instalando una batería totalmente nueva.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🔌</div>
+                <h3>Puerto de Carga</h3>
+                <p>Reparamos o reemplazamos conectores de carga defectuosos o dañados.</p>
+            </div>
+            <div class="card">
+                <div class="icon">💧</div>
+                <h3>Daño por Agua</h3>
+                <p>Mantenimiento profundo y desoxidación para dispositivos mojados.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact">
+        <h2>Contáctanos</h2>
+        <p>Déjanos tus datos y te responderemos a la brevedad.</p>
+        
+        <form class="contact-form" action="#" method="POST">
+            <div class="input-group">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="input-group">
+                <label for="modelo">Modelo del Teléfono</label>
+                <input type="text" id="modelo" name="modelo" placeholder="Ej: iPhone 13, Samsung S21" required>
+            </div>
+            <div class="input-group">
+                <label for="mensaje">Descripción de la Avería</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describe qué le pasa a tu móvil..." required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar Consulta</button>
+        </form>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 PhoneFix. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
-
 </html>
