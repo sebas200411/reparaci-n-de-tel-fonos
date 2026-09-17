@@ -1,2 +1,2 @@
-# reparaci-n-de-tel-fonos
-# reparaci-n-de-tel-fonos
+# reparación-de-telefonos
+# reparación-de-telefonos
